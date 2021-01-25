@@ -10,7 +10,7 @@ function EditProfilePopup({onClose, isOpen, onUpdateUser}) {
     React.useEffect(() => {
         setName(currentUser.name);
         setDescription(currentUser.about);
-    }, [currentUser]); 
+    }, [currentUser, isOpen]); 
 
     function handleChangeName(e) {
       setName(e.target.value);

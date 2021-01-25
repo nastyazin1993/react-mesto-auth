@@ -153,6 +153,7 @@ function App() {
           iconStatus: okIcon,
           text: "Вы успешно зарегистрировались!",
         });
+        history.push("/sign-in")
       })
       .catch((err) => {
         console.log(err);
